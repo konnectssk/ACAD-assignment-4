@@ -1,0 +1,18 @@
+
+"""
+2.1 Write a Python program using function concept that maps list of words into a list of integers
+representing the lengths of the corresponding words .
+Hint: If a list [ ab,cde,erty] is passed on to the python function output should come as [2,3,4]
+Here 2,3 and 4 are the lengths of the words in the list.
+
+"""
+
+def map_list_to_len(words):
+    lengths = []
+    for word in words:
+        lengths.append(len(word))
+    return lengths
+
+if __name__ == "__main__":
+    words = ['SSK', 'Saravana', 'Acad Glid']
+    print (map_list_to_len(words))
